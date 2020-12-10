@@ -2,7 +2,7 @@
 % Please edit documentation in R/fetch_n_sequences_from_unique_protein_ids.R
 \name{fetch_n_sequences_from_unique_protein_ids}
 \alias{fetch_n_sequences_from_unique_protein_ids}
-\title{Fetch the n sequence from one or more unique protein ID}
+\title{Internal function}
 \usage{
 fetch_n_sequences_from_unique_protein_ids(
   protein_ids,
@@ -24,5 +24,6 @@ one per protein ID
 }
 \description{
 Fetch the n sequence from one or more unique protein ID,
-where n is the maximum number of sequences NCBI allows for
+where \code{max_n_protein_ids}
+is the maximum number of sequences NCBI allows for
 }

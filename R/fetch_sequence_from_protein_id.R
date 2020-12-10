@@ -7,22 +7,9 @@ fetch_sequence_from_protein_id <- function(
   protein_id,
   verbose = FALSE
 ) {
-  fasta_raw <- NA
-  tryCatch({
-    fasta_raw <- rentrez::entrez_fetch(
-      id = protein_id,
-      db = "protein",
-      rettype = "fasta",
-      config = httr::config(verbose = verbose)
-    )
-    }, error = function(e) {
-      stop(
-        "Error for protein ID '", protein_id, "': ", e
-      )
-    }
+  sprentrez::fetch_n_sequences_from_unique_protein_ids(
+    protein_ids = protein_id,
+    max_n_protein_ids = 1,
+    verbose = verbose
   )
-  fasta_text <- stringr::str_split(fasta_raw, pattern = "\n")[[1]]
-  seq <- paste0(fasta_text[-1], collapse = "")
-  names(seq) <- stringr::str_sub(fasta_text[1], 2)
-  seq
 }

@@ -1,7 +1,8 @@
-#' Fetch the n sequence from one or more unique protein ID
+#' Internal function
 #'
 #' Fetch the n sequence from one or more unique protein ID,
-#' where n is the maximum number of sequences NCBI allows for
+#' where \code{max_n_protein_ids}
+#' is the maximum number of sequences NCBI allows for
 #' @inheritParams default_params_doc
 #' @param max_n_protein_ids the maximum number of protein IDs
 #' @return a character vector with protein sequences,

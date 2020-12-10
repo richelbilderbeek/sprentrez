@@ -6,11 +6,15 @@ Authors@R: c(
 Description: What the package does (one paragraph).
 License: GPL-3 + file LICENSE
 Imports:
+    dplyr,
     httr,
+    Peptides,
     pureseqtmr,
     purrr,
     readr,
-    rentrez
+    rentrez,
+    stringr,
+    tibble
 Suggests: 
     testthat,
     covr

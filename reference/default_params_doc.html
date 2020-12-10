@@ -6,7 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • sprentrez</title>
+<title>This function does nothing. It is intended to inherit is parameters'
+documentation. — default_params_doc • sprentrez</title>
 
 
 <!-- jquery -->
@@ -39,7 +40,10 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="This function does nothing. It is intended to inherit is parameters'
+documentation. — default_params_doc" />
+<meta property="og:description" content="This function does nothing. It is intended to inherit is parameters'
+documentation." />
 
 
 
@@ -58,7 +62,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -105,50 +109,107 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>This function does nothing. It is intended to inherit is parameters'
+documentation.</h1>
+    <small class="dont-index">Source: <a href='https://github.com/richelbilderbeek/sprentrez/blob/master/R/default_params_doc.R'><code>R/default_params_doc.R</code></a></small>
+    <div class="hidden name"><code>default_params_doc.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>This function does nothing. It is intended to inherit is parameters'
+documentation.</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>default_params_doc</span><span class='op'>(</span>
+  <span class='va'>chunk_size</span>,
+  <span class='va'>fasta_file</span>,
+  <span class='va'>fasta_text</span>,
+  <span class='va'>gene_ids</span>,
+  <span class='va'>gene_name</span>,
+  <span class='va'>hgvs</span>,
+  <span class='va'>protein_id</span>,
+  <span class='va'>protein_ids</span>,
+  <span class='va'>snp_id</span>,
+  <span class='va'>subject_ids</span>,
+  <span class='va'>variation</span>,
+  <span class='va'>variations</span>,
+  <span class='va'>verbose</span>
+<span class='op'>)</span></pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="default_params_doc.html">default_params_doc()</a></code> </p>
-        </td>
-        <td><p>This function does nothing. It is intended to inherit is parameters'
-documentation.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_gene_names_from_human_gene_ids.html">get_gene_names_from_human_gene_ids()</a></code> </p>
-        </td>
-        <td><p>From a human gene ID, get the gene name.
-This function checks if the gene is indeed fror a human</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>chunk_size</th>
+      <td><p>the number of protein IDs in an NCBI quey.
+Too many values results in an NCBI API error</p></td>
+    </tr>
+    <tr>
+      <th>fasta_file</th>
+      <td><p>name of a FASTA file</p></td>
+    </tr>
+    <tr>
+      <th>fasta_text</th>
+      <td><p>text in the same format as a FASTA file</p></td>
+    </tr>
+    <tr>
+      <th>gene_ids</th>
+      <td><p>one or more IDs of a gene</p></td>
+    </tr>
+    <tr>
+      <th>gene_name</th>
+      <td><p>name of a gene</p></td>
+    </tr>
+    <tr>
+      <th>hgvs</th>
+      <td><p>a variation in HGVS ('Human Genome Variation Society') format</p></td>
+    </tr>
+    <tr>
+      <th>protein_id</th>
+      <td><p>ID of a protein.
+For example, <code>NP_001007554.1</code> is a protein ID.</p></td>
+    </tr>
+    <tr>
+      <th>protein_ids</th>
+      <td><p>one or more protein IDs.
+For example, <code>NP_001007554.1</code> is a protein ID.</p></td>
+    </tr>
+    <tr>
+      <th>snp_id</th>
+      <td><p>the ID of a SNP</p></td>
+    </tr>
+    <tr>
+      <th>subject_ids</th>
+      <td><p>one of more IDs of a subject</p></td>
+    </tr>
+    <tr>
+      <th>variation</th>
+      <td><p>one variation.
+For example, <code>NP_009089.4:p.Val723Gly</code> is a variation.</p></td>
+    </tr>
+    <tr>
+      <th>variations</th>
+      <td><p>one or more variations.
+For example, <code>NP_009089.4:p.Val723Gly</code> is a variation.</p></td>
+    </tr>
+    <tr>
+      <th>verbose</th>
+      <td><p>set to TRUE for more output</p></td>
+    </tr>
     </table>
-  </div>
 
+    <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
+
+    <p>This is an internal function, so it should be marked with
+<code>@noRd</code>. This is not done, as this will disallow all
+functions to find the documentation parameters</p>
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>Richèl J.C. Bilderbeek</p>
+
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>

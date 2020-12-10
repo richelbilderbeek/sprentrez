@@ -1,6 +1,6 @@
 test_that("process 3 protein IDs in 2 chunks of 2", {
   protein_ids_filename <- system.file(
-    "extdata", "protein_ids.csv", package = "ncbi"
+    "extdata", "protein_ids.csv", package = "sprentrez"
   )
   all_protein_ids <- readr::read_csv(
     protein_ids_filename,

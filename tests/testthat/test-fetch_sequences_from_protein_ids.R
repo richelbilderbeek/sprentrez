@@ -37,7 +37,7 @@ test_that("verbose error", {
 test_that("Large requests are handled nicely as well", {
   Sys.sleep(1)
   protein_ids_filename <- system.file(
-    "extdata", "protein_ids.csv", package = "ncbi"
+    "extdata", "protein_ids.csv", package = "sprentrez"
   )
   protein_ids <- readr::read_csv(
     file = protein_ids_filename,

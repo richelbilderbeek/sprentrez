@@ -18,7 +18,7 @@ test_that("verbose", {
 test_that("use too many", {
   skip("WIP")
   gene_ids <- readr::read_csv(
-    file = system.file("extdata", "all_gene_ids.csv", package = "ncbi"),
+    file = system.file("extdata", "all_gene_ids.csv", package = "sprentrez"),
     col_types = readr::cols(gene_id = readr::col_double())
   )$gene_id
   gene_names <- get_gene_names_from_human_gene_ids(gene_ids)

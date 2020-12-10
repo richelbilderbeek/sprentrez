@@ -1,6 +1,6 @@
 test_that("use", {
   protein_ids_filename <- system.file(
-    "extdata", "protein_ids.csv", package = "ncbi"
+    "extdata", "protein_ids.csv", package = "sprentrez"
   )
   all_protein_ids <- readr::read_csv(
     protein_ids_filename,
@@ -24,7 +24,7 @@ test_that("use", {
 
 test_that("limit the number of proteins", {
   protein_ids_filename <- system.file(
-    "extdata", "protein_ids.csv", package = "ncbi"
+    "extdata", "protein_ids.csv", package = "sprentrez"
   )
   protein_ids <- readr::read_csv(
     protein_ids_filename,

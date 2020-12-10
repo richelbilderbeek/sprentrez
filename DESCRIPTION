@@ -8,12 +8,10 @@ License: GPL-3 + file LICENSE
 Imports:
     dplyr,
     httr,
-    Peptides,
     pureseqtmr,
     purrr,
     readr,
     rentrez,
-    stringr,
     tibble
 Suggests: 
     testthat,

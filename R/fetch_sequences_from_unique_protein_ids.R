@@ -29,6 +29,7 @@ fetch_sequences_from_unique_protein_ids <- function(# nolint indeed a long funct
     sequences[from:to] <- sprentrez::fetch_n_sequences_from_unique_protein_ids(
       protein_ids[from:to]
     )
+    Sys.sleep(0.35)
   }
   testthat::expect_equal(length(protein_ids), length(sequences))
   testthat::expect_equal(0, sum(is.na(sequences)))

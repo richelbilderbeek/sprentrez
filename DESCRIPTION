@@ -8,7 +8,7 @@ License: GPL-3 + file LICENSE
 Imports:
     dplyr,
     httr,
-    pureseqtmr,
+    pureseqtmr (>= 1.3),
     purrr,
     readr,
     rentrez,
